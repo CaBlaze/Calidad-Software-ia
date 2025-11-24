@@ -1,0 +1,31 @@
+{
+  "name": "space-invaders-backend",
+  "version": "1.0.0",
+  "description": "Backend API para el juego Space Invaders",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "db:init": "node src/config/initDb.js",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
+  },
+  "keywords": ["space-invaders", "game", "api", "express"],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.5.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}

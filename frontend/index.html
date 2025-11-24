@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+
+        #game-container {
+            position: relative;
+        }
+
+        canvas {
+            display: block;
+            border: 3px solid #0ff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<div id="game-container"></div>
+
+<!-- Cargar Kaboom desde CDN -->
+<script src="https://unpkg.com/kaboom@3000.1.17/dist/kaboom.js"></script>
+
+<!-- Cargar el juego -->
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

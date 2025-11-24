@@ -1,0 +1,33 @@
+{
+  "name": "space-invaders",
+  "version": "1.0.0",
+  "description": "Space Invaders game with Kaboom.js, Express, and MySQL",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "db:init": "node backend/src/config/initDb.js"
+  },
+  "keywords": ["game", "space-invaders", "kaboom"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "kaboom": "3000.1.17",
+    "mysql2": "3.11.4"
+  },
+  "devDependencies": {
+    "eslint": "9.5.0",
+    "jest": "29.7.0",
+    "supertest": "6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {},
+    "testMatch": ["**/tests/**/*.test.js"]
+  }
+}

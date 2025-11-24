@@ -1,0 +1,6 @@
+projectKey=copilot
+serverUrl=http://localhost:9000
+serverVersion=25.11.0.114957
+dashboardUrl=http://localhost:9000/dashboard?id=copilot
+ceTaskId=e19fa557-11cc-4e24-b840-a2c037d81b02
+ceTaskUrl=http://localhost:9000/api/ce/task?id=e19fa557-11cc-4e24-b840-a2c037d81b02

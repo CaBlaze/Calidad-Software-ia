@@ -16,6 +16,21 @@ export default {
   ],
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov', 'html'],
+  
+  // Configuración para SonarQube usando jest-sonar
+  reporters: [
+    'default',
+    [
+      'jest-sonar',
+      {
+        outputDirectory: 'coverage',
+        outputName: 'test-reporter.xml',
+        reportedFilePath: 'relative',
+        relativeRootDir: './'
+      }
+    ]
+  ],
+  
   verbose: true,
   testTimeout: 10000,
   clearMocks: true,
